@@ -4,13 +4,17 @@
 Добавление собственных роутеров в `main.go`
 ```
 Application.Routes(app.MapRoutes{
-			"/one": handlers.HandleOne{},
-			"/two": handlers.HandleWwo{},
-			"/{url:.*}": handlers.Handle404{},
+			{"/one": handlers.HandleOne{}},
+			{"/two": handlers.HandleWwo{}},
+			{"/{url:.*}": handlers.Handle404{}},
 		})
 ```
 Где каждый Handle должен быть создан в `src/interfaces/handlers/`
 ```
+import (
+	app "github.com/dblokhin/webapp"
+)
+
 type HandleCustom struct {
     app.HTTPController
 }
