@@ -1,7 +1,7 @@
 package main
 
 import (
-	"interfaces/app"
+	app "github.com/dblokhin/webapp"
 	"interfaces/handlers"
 	"log"
 )
@@ -16,12 +16,12 @@ func main() {
 
 	if Application.Config.Site.Disabled {
 		log.Println("Site is disabled")
-		Application.Routes(app.MapRoutes{"/": handlers.HandleDisabled{}})
+		Application.Routes(app.MapRoutes{{"/": handlers.HandleDisabled{}}})
 	} else {
 		Application.Routes(app.MapRoutes{
-			"/": handlers.HandleHome{},
+			{"/": handlers.HandleHome{}},
 			//"/else": handlers.HandleElse{},
-			"/{url:.*}": handlers.Handle404{},
+			{"/{url:.*}": handlers.Handle404{}},
 		})
 	}
 

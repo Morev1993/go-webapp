@@ -4,7 +4,7 @@ package handlers
 // (c) Dmitriy Blokhin (sv.dblokhin@gmail.com), www.webjinn.ru
 
 import (
-	"interfaces/app"
+	app "github.com/dblokhin/webapp"
 )
 
 type HandleHome struct {
