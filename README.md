@@ -1,5 +1,14 @@
 # Разработка web-приложения на Golang
 
+## Quick start (easy to use)
+```
+$ git clone git@github.com:dblokhin/go-webapp.git
+$ cd go-webapp/
+$ GOPATH=`pwd`
+$ go get github.com/dblokhin/webapp 
+$ go run src/main.go
+```
+
 ## Пример использования
 Добавление собственных роутеров в `main.go`
 ```
