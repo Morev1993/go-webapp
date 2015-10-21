@@ -14,7 +14,7 @@ func main() {
 	log.Println("Server is preparing to start")
 	Application := app.GetApplication()
 
-	if Application.Config.Site.Disabled {
+	if Application.Config.GetBool("site.disabled") {
 		log.Println("Site is disabled")
 		Application.Routes(app.MapRoutes{{"/": handlers.HandleDisabled{}}})
 	} else {

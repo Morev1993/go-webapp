@@ -1,0 +1,30 @@
+{
+  "db": {
+    "disable": true,
+    "driver": "mysql",
+    "datasource": "root:password@/db?charset=utf8"
+  },
+  "net": {
+    "listen": {
+      "host": "localhost",
+      "port": 8080
+    }
+  },
+  "site": {
+    "host": "host.ru",
+    "disabled": false,
+    "title": "Default site title",
+    "author": "",
+    "description": "Description of site",
+    "copyright": "© 2015",
+    "keywords": "",
+    
+    "ANY_YOUR_VARIABLE": "Yeah!"
+  }
+}
+
+
+
+
+
+
