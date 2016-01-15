@@ -4,7 +4,7 @@
 ```
 $ git clone https://github.com/dblokhin/go-webapp.git
 $ cd go-webapp/
-$ GOPATH=`pwd`
+$ export GOPATH=`pwd`
 $ go get github.com/dblokhin/webapp 
 $ go run src/main.go
 ```
