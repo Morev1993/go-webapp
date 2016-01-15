@@ -2,7 +2,7 @@
 
 ## Quick start (easy to use)
 ```
-$ git clone git@github.com:dblokhin/go-webapp.git
+$ git clone https://github.com/dblokhin/go-webapp.git
 $ cd go-webapp/
 $ GOPATH=`pwd`
 $ go get github.com/dblokhin/webapp 
