@@ -20,8 +20,8 @@ func main() {
 	} else {
 		Application.Routes(app.MapRoutes{
 			{"/": handlers.HandleHome{}},
-			//"/else": handlers.HandleElse{},
-			{"/{url:.*}": handlers.Handle404{}},
+			//{"/some/:param": handlers.HandleElse{}},
+			{"/:url": handlers.Handle404{}},
 		})
 	}
 
